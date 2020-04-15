@@ -1,0 +1,34 @@
+<!-- <app-menu></app-menu> -->
+
+<app-header></app-header>
+
+<div id="wrapper">
+
+    <app-menu></app-menu>
+
+    <app-sidebar></app-sidebar>
+
+    <!-- .page-content -->
+    <div class="page-content sidebar-page clearfix rOverLap right-sidebar-page">
+        <!-- .page-content-wrapper -->
+        <div class="page-content-wrapper">
+            <div class="page-content-inner">
+
+                <!-- .page-content-inner -->
+                <app-page-header pageTitle="Bienvenido, Jorge Tinoco" description="Administrador"></app-page-header>
+
+
+                <app-store></app-store>
+
+                <!-- Componente para alertas -->
+                <!-- <app-message></app-message> -->
+
+            </div>
+            <!-- / .page-content-inner -->
+        </div>
+        <!-- / page-content-wrapper -->
+    </div>
+    <!-- / page-content -->
+</div>
+
+<app-progress-bar [status]=status [level]=level [description]=description></app-progress-bar>

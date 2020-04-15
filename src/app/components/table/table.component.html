@@ -1,0 +1,16 @@
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th *ngFor="let t of title; let i = index">{{ t.label }}</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let d of data; let j = index" [ngClass]="{'active': rowSelected == j}" (click)="selectRow(j)">
+            <td *ngFor="let t of title">
+                {{ d[t.name] }}
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<!-- <script src="js/pages/tables-basic.js"></script> -->

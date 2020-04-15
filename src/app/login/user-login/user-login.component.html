@@ -1,0 +1,55 @@
+<div fxLayout="row" fxLayoutAlign="center center">
+
+    <!-- Start login container -->
+    <div fxFlex="50" style="margin-top: 160px">
+        <div class="login-panel panel panel-default plain animated bounceIn">
+            <!-- Start .panel -->
+            <div class="panel-heading">
+                <h3 class="text-center">
+                    <!-- <img id="logo" src="img/logo-dark.png" alt="Dynamic logo"> -->
+                    <b>Maxpoint Manager 3.0.0<!-- {{appName}} {{version}} --></b>
+                </h3>
+            </div>
+            <div class="panel-body">
+                <form class="form-horizontal mt0" name="loginForm" [formGroup]="loginForm" novalidate>
+                    <div class="form-horizontal mt0">
+                        <div class="form-group">
+                            <div class="col-lg-12">
+                                <div class="input-group input-icon">
+                                    <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+                                    <input type="text" formControlName="username" name="username" class="form-control" placeholder="Ingrese su usuario" />
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-lg-12">
+                                <div class="input-group input-icon">
+                                    <span class="input-group-addon"><i class="fa fa-key"></i></span>
+                                    <input type="password" formControlName="password" name="password" class="form-control" placeholder="Ingrese su clave" />
+                                </div>
+                                <span class="help-block text-right"><a href="#">¿Recuperar contraseña?</a></span>
+                            </div>
+                        </div>
+                        <div class="form-group mb0">
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                <div class="checkbox-custom">
+                                    <input type="checkbox" name="remember" value="option">
+                                    <label for="remember">¿Mantener sesión activa?</label>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-sm-6">
+                                <!-- Button Login -->
+                                <!-- [disabled]="loginForm.invalid" -->
+                                <button (click)="login()" class="btn btn-default pull-right btn-login btn-success pl50 pr50" type="submit">Iniciar Sesión</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- End .panel -->
+    </div>
+    <!-- End login container -->
+
+</div>

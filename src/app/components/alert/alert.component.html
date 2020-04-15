@@ -1,0 +1,7 @@
+<div id="gritter-notice-wrapper" class="bottom-right">
+    <div [ngClass]="['alert', styles[option].class, 'fade', 'in', 'bottom-right']" style="width: 420px">
+        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+        <i [ngClass]="['glyphicon', styles[option].icon, 'alert-icon']"></i>
+        <strong> {{ title }} </strong> {{ message }}
+    </div>
+</div>

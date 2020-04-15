@@ -1,0 +1,22 @@
+<div class="bootbox modal fade modal-style6 in" tabindex="-1" role="dialog" aria-hidden="false" [ngStyle]="{ 'display': status }">
+    <div class="modal-backdrop fade in"></div>
+    <div class="modal-dialog modal-dialog-center" style="margin-top: -50px; margin-left: -300px;">
+        <div class="modal-content">
+            <!-- <div class="modal-header">
+        <button type="button" class="bootbox-close-button close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h4 class="modal-title">Alert!!!</h4>
+      </div> -->
+            <div class="modal-body">
+                <div class="bootbox-body">{{ description }}</div>
+                <div class="progress progress-striped active">
+                    <div class="progress-bar progress-bar-success active" role="progressbar" aria-valuemin="0" aria-valuemax="100" [ngStyle]="{ 'width': level+'%' }">
+                        {{ level }}%
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="modal-footer ">
+        <button data-bb-handler="success " type="button " class="btn btn-primary btn-alt ">Ok i got it</button>
+      </div> -->
+        </div>
+    </div>
+</div>

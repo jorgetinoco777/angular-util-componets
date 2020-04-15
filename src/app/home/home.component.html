@@ -1,0 +1,45 @@
+<!-- <div style="display: flex; justify-content: center; align-items: center;"> -->
+
+<h3>Brands</h3>
+
+<div style="margin: 0 40px;
+    position: absolute;
+    top:25%;">
+
+    <!-- <div style="line-height: 20px; margin: 0 40px"> -->
+    <div>
+
+        <!-- Brands -->
+        <div *ngFor="let brand of brands" style="
+            width: 120px; 
+            height: 66px;
+            float: left; 
+            margin: 20px 18px;
+            -webkit-box-shadow: 0px 0px 5px 2px rgba(189,187,189,1); 
+            -moz-box-shadow: 0px 0px 5px 2px rgba(189,187,189,1); 
+            box-shadow: 0px 0px 5px 2px rgba(189,187,189,1);
+            border-radius: 6px;
+            -moz-border-radius: 6px;
+            -webkit-border-radius: 6px;
+            border: 0px solid #000000;
+            padding: 0;
+            ">
+            <a (click)="brandSelected(brand)" data-toggle="lightbox" data-gallery="gallerymode" ata-title="Yachts" data-parrent="">
+                <img src="/assets/img/brands/{{ brand.imagen }}" alt="{{ brand.nombreComercial }}" style="
+                    margin: 0;
+                    padding: 0;
+                    width: 120px;
+                    text-align:  center;
+                    border-radius: 6px;
+                    -moz-border-radius: 6px;
+                    -webkit-border-radius: 6px;
+                    border: 0px solid #000000;
+                    " />
+            </a>
+        </div>
+
+    </div>
+
+</div>
+
+<app-progress-bar [description]="description" [status]="status" [level]="level"></app-progress-bar>
